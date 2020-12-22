@@ -12,7 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/',function(){
+    return "welcome";
+});
 Route::prefix('admin')->group(function (){
     Route::get('/{name?}', 'CMSController@index');
     Route::get('/about', 'CMSController@about')->name('about');
