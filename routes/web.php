@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/',function(){
-    return "welcome";
+    return "atmiya university welcomes you";
 });
 Route::prefix('admin')->group(function (){
     Route::get('/{name?}', 'CMSController@index');
